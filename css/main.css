@@ -1,0 +1,679 @@
+@import "reset.css";
+@import "font.css";
+@import "header-image.css";
+
+figcaption {
+    font-size: 0.875em;
+}
+
+footer {
+    align-items: center;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: column;
+    grid-area: footer;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+footer .copyright {
+    color: #666;
+    font-size: .75em;
+}
+
+h3 {
+    color: #1f54a9;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"] {
+    background-color: #333;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: .75em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+input[type="text"], input[type="email"] {
+    color: #616161;
+    display: block;
+    font-size: 1em;
+    height: 30px;
+    width: 90%;
+}
+
+main {
+grid-area: main;
+width: 100%;
+}
+
+nav a {
+    color: #616161;
+    display: inline-block;
+    font-size: .875em;
+    font-weight: 400;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:active {
+    color: #d53004;
+    text-decoration: underline;
+}
+
+.bold-em {
+    font-weight: 700;
+}
+
+.featured-quote {
+    background: #eef1f2;
+    border-left: 5px solid #ff7619;
+    font-size: .875em;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 1em 0;
+    padding: 10px;
+}
+
+.img-left {
+    float: left;
+}
+
+.img-right {
+    float: right;
+}
+
+.italic-em {
+    color: #000;
+    font-style: italic;
+}
+
+.post-header .post-title-wrapper {
+    border-bottom: 1px solid #eaeaea;
+    margin-top: 1em;
+}
+
+.post-meta {
+    font-size: .875em;
+    letter-spacing: -0.04em;
+    padding: 0 5px 10px;
+}
+
+.post-title {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.read-more a {
+    background-color: #1e457c;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: .875em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    max-width: 120px;
+    padding: 10px 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.read-more a:hover, .read-more a:active {
+    background-color: #333;
+}
+
+.tagline {
+    margin-bottom: 0;
+}
+
+
+.underline-em {
+    text-decoration: underline;
+}
+
+#archived-posts {
+    border-top: 1px solid #eaeaea;
+    grid-area: archive;
+}
+
+#archived-posts .post-card {
+    background-color: #fafafa;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px #ccc;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+#archived-posts .post-card .post-header {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: .875em;
+    min-height: 200px;
+    text-align: right;
+}
+
+#archived-posts .post-card .post-header .post-category {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    font-size: .75em;
+    margin-right: 5px;
+    margin-top: .5em;
+    padding: 5px;
+}
+
+#archived-posts .post-card .post-header .post-category a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#archived-posts .post-cards-wrapper {
+    margin-top: 1em;
+}
+
+#archived-posts .post-excerpt {
+    font-size: .875em;
+}
+
+#archived-posts .post-meta {
+    font-size: .75em;
+}
+
+#featured-post .post-header {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 150px;
+}
+
+#featured-post .post-meta {
+    color: #eaeaea;
+    font-size: .75em;
+    margin-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#featured-post .post-meta a {
+    color: #fff;
+}
+
+#featured-post .post-title {
+    color: #fff;
+    font-size: 1em;
+    padding: 10px;
+}
+
+#featured-post .post-title-wrapper {
+    background-color: #1e457c;
+    color: #fafafa;
+    width: 100%;
+}
+
+#footer-logo {
+    margin-bottom: .5em;
+    margin-top: .5em;
+}
+
+#footer-nav {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+#main-nav {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+#masthead {
+    display: flex;
+    flex-direction: column;
+    grid-area: header;
+    justify-content: space-between;
+}
+
+#page {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: "header header header" "main main main" "archive archive archive" "form form form" "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 40px;
+}
+
+#single-post .post-header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-area: header;
+}
+
+#single-post .post-header .post-meta {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+#site-tagline {
+    border: 4px solid #eef1f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    padding: 10px;
+    text-align: center;
+}
+
+#subscription-form {
+    grid-area: form;
+    border-radius: 4px;
+}
+
+#subscription-form .content {
+    background-color: #eef1f2;
+    padding: 20px 30px;
+}
+
+#subscription-form .form-instructions {
+    color: #c82d04;
+    font-size: .875em;
+}
+
+#subscription-form .form-title {
+    color: #000;
+    font-size: 1.5em;
+    margin: 0;
+    width: 150px;
+}
+
+#subscription-form .header {
+    background-image: url(../images/join-our-mailing-list-large-wide.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 80px;
+    padding: 20px;
+}
+
+#subscription-form .offer {
+    color: #1E457C;
+    font-size: 1.125em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+
+@media (min-width: 480px) {
+    .post-image {
+        float: right;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    nav a {
+        font-size: 1em;
+    }
+
+    .featured-quote {
+        font-size: 1em;
+        padding: 30px;
+        margin-bottom: 2em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #archived-posts .post-card {
+        margin-bottom: 0;
+    }
+
+    #archived-posts .post-cards-wrapper {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px;
+    }
+
+    #featured-post .post-meta {
+        font-size: 0.875em;
+    }
+
+    #featured-post .post-title {
+        font-size: 1.375em;
+        padding-top: 30px;
+    }
+
+    #footer-nav {
+        align-self: normal;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    #footer-nav a {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #main-nav {
+        justify-content: center;
+    }
+
+    #main-nav a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #page {
+        grid-template-areas: "header header header" "main main main" "form form form" "archive archive archive" "footer footer footer";
+    }
+
+    #page.home {
+        grid-template-areas: "header header header" "main main main" "archive archive archive" "form form form"  "footer footer footer";
+    }
+
+    #single-post .post-header {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #single-post .post-header .post-meta {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    #subscription-form {
+        grid-area: form;
+        margin: 2em auto 1em;
+        width: 400px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    #featured-post .post-header {
+        min-height: 300px;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+    nav a {
+        font-size: 1em;
+    }
+
+    input[type="text"], input[type="email"] {
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+
+    .featured-quote {
+        font-size: 1em;
+        padding: 30px;
+    }
+
+    #archived-posts .post-card {
+        margin-bottom: 0;
+    }
+
+    #archived-posts .post-cards-wrapper {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #featured-post .post-meta {
+        font-size: 0.875em;
+    }
+
+    #featured-post .post-title {
+        font-size: 1.375em;
+        padding-top: 30px;
+    }
+
+    #footer-nav {
+        align-self: normal;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #footer-nav a {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #page {
+        grid-gap: 2em;
+        grid-template-areas: "header header header" "main main main" "form form form" "archive archive archive" "footer footer footer";
+        padding: 30px 40px;
+    }
+
+    #page.home {
+        grid-template-areas: "header header header" "main main main" "archive archive archive" "form form form" "footer footer footer";
+    }
+
+    #single-post .post-header {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        grid-area: header;
+    }
+
+    #single-post .post-header .post-meta {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    #subscription-form {
+        margin-top: 40px;
+    }
+
+    #subscription-form form {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #subscription-form .content {
+        padding: 20px 30px 30px;
+    }
+
+    #subscription-form .form-title {
+        font-size: 1.5em;
+        text-align: center;
+        width: 100%;
+    }
+
+    #subscription-form .header {
+        background-image: none;
+        min-height: 50px;
+        padding: 10px;
+    }
+
+    #subscription-form .offer {
+        font-size: 1em;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    #subscription-form label {
+        font-size: .875em;
+    }
+}
+
+@media (min-width: 1025px) {
+    input[type="button"], input[type="submit"], input[type="reset"] {
+        font-size: 0.875em;
+    }
+
+    input[type="text"], input[type="email"] {
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+
+    nav a {
+        font-size:  1em;
+    }
+
+    footer .copyright {
+        font-size: 0.875em;
+    }
+
+    .featured-quote {
+        font-size: 1.125em;
+        padding: 30px;
+    }
+
+    #archived-posts .post-card .post-header .post-category {
+        font-size: .875em;
+    }
+
+    #archived-posts .post-cards-wrapper {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #featured-post .post-header {
+        min-height: 400px;
+    }
+
+    #featured-post .post-meta {
+        font-size: 0.875em;
+    }
+
+    #featured-post .post-title {
+        font-size: 1.375em;
+        padding-top: 30px;
+    }
+
+    #main-nav {
+        grid-area: nav;
+        justify-content: space-around;
+        margin-top: .5em;
+    }
+
+    #masthead {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+            "logo nav"
+            "tagline tagline";
+    }
+
+    #masthead-logo {
+        grid-area: logo;
+    }
+
+    #page {
+        grid-gap: 3em;
+        grid-template-areas:
+            ". header header header ."
+            ". main main main ."
+            ". form form form ."
+            ". archive archive archive ."
+            ". footer footer footer .";
+        grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    }
+
+    #page.home {
+        grid-template-areas:
+            ". header header header ."
+            ". main main main ."
+            ". archive archive archive ."
+            ". form form form ."
+            ". footer footer footer .";
+    }
+
+    #single-post .post-content {
+        grid-area: content;
+    }
+
+    #single-post .post-header {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        grid-area: header;
+    }
+
+    #single-post .post-header .post-meta {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    #single-post .post-header .post-title {
+        font-size: 1.5em;
+    }
+
+    #single-post .post-header .post-title-wrapper {
+        display: flex;
+        flex-direction: column;
+        grid-area: title;
+        justify-content: flex-end;
+    }
+
+    #site-tagline {
+        grid-area: tagline;
+    }
+
+    #subscription-form form {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #subscription-form .content {
+        padding: 20px 30px 60px;
+    }
+
+    #subscription-form .header {
+        background-image: none;
+        min-height: 50px;
+        padding: 20px;
+    }
+
+    #subscription-form .form-instructions {
+        font-size: 1em;
+    }
+
+    #subscription-form .form-title {
+        font-size: 1.75em;
+        text-align: center;
+        width: 100%;
+    }
+
+    #subscription-form .offer {
+        font-weight: 400;
+        text-align: center;
+    }
+}

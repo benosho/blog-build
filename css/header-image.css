@@ -1,0 +1,19 @@
+#archived-posts .post-card .postid-1 .post-header {
+    background-image: url(../images/typewriter-large-wide.jpg);
+}
+
+#archived-posts .post-card .postid-2 .post-header {
+    background-image: url(../images/open-road-large-wide.jpg);
+}
+
+#archived-posts .post-card .postid-3 .post-header {
+    background-image: url(../images/scrabble-pieces-spelling-blog-large-wide.jpg);
+}
+
+#archived-posts .post-card .postid-5 .post-header {
+    background-image: url(../images/dart-in-dartboard-bullseye-large-wide.jpg);
+}
+
+#featured-post .postid-4 .post-header {
+    background-image: url(../images/crowned-pawn-in-chess-game-large-wide.jpg);
+}

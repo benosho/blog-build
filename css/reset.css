@@ -1,0 +1,77 @@
+a {
+    color: #d53004;
+}
+
+a:hover, a:active {
+    color: #000;
+}
+
+body {
+    background-color: #fff;
+    color: #494949;
+    font-family: "Noto Sans", Arial, sans-serif;
+    line-height: 1.5;
+}
+
+figure {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+h1,
+h2,
+h3
+h4,
+h5,
+h6 {
+    color: #222;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: .6em;
+    margin-top: .6em;
+}
+
+h2 {
+    font-size: 1.375em;
+    margin-bottom: .8em;
+    margin-top: .8em;
+}
+
+h3 {
+    font-size: 1.25em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+h4 {
+    font-size: 1.125em;
+    margin-bottom: 1.2em;
+    margin-top: 1.2em;
+}
+
+h5 {
+    margin-bottom: 1.4em;
+    margin-top: 1.4em;
+}
+
+h6 {
+    margin-bottom: 1.6em;
+    margin-top: 1.6em;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+input {
+    margin-bottom: .5em;
+    margin-top: .5em;
+}
+
+p {
+    margin-bottom: .6em;
+    margin-top: .6em;
+}
